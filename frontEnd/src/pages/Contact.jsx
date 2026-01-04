@@ -19,13 +19,12 @@ const Contact = () => {
             Our Store
           </p>
           <p className='text-gray-500'>
-          Galgotias University <br />Gautam Budh Nagar,
-          Greater Noida,<br />Uttar Pradesh,India
+          Guriganj Amethi <br />Gauriganj Amethi,<br />Uttar Pradesh,India
           </p>
           <p className='text-gray-600'>
-            +91 9759940199
+            +91 9161698401
             <br />
-            baliyanlucky85@gmail.com
+            sushilpanday7656@gmail.com
           </p>
           <p className='font-semibold text-xl'>
             Careers at Forever
@@ -36,7 +35,7 @@ const Contact = () => {
           <button className='border-3 border-black px-8 py-4 text-sm
           hover:bg-black hover:text-white transition-all duration-300 ease-in-out
           active:scale-95 cursor-pointer'>
-            <a href="https://www.instagram.com/luckybaliyan3507/" target='_blank'>Explore My Works</a>
+            <a href="https://github.com/sushil12453-bit" target='_blank'>Explore My Works</a>
           </button>
         </div>
       </div>

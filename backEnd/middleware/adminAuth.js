@@ -22,19 +22,34 @@ export default adminAuth;*/
 
 import jwt from "jsonwebtoken";
 
-const adminAuth = async (req, res, next) => {
+const adminAuth = (req, res, next) => {
   try {
-    const token = req.headers.token; // 👈 IMPORTANT
+    const token = req.headers.token;
 
     if (!token) {
-      return res.json({ success: false, message: "Not Authorized Login Again" });
+      return res.json({
+        success: false,
+        message: "Not Authorized. Login Again",
+      });
     }
 
-    jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    if (!decoded.isAdmin) {
+      return res.json({
+        success: false,
+        message: "Admin access required",
+      });
+    }
+
+    req.admin = decoded; // optional but useful
     next();
 
   } catch (error) {
-    return res.json({ success: false, message: "Not Authorized Login Again" });
+    return res.json({
+      success: false,
+      message: "Invalid or Expired Token",
+    });
   }
 };
 

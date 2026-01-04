@@ -6,8 +6,8 @@ const addProduct = async (req, res) => {
 
   try {
 
-    //console.log("📦 BODY 👉", req.body);
-    //console.log("🖼 FILES 👉", req.files);
+    console.log("📦 BODY 👉", req.body);
+    console.log("🖼 FILES 👉", req.files);
 
 
 

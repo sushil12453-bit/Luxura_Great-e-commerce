@@ -118,7 +118,7 @@ const ShopContextProvider = (props)=>{
         try{
 
             const response = await axios.get(backendUrl + '/api/product/list');
-            console.log("API RESPONSE 👉", response.data);
+         //   console.log("API RESPONSE 👉", response.data);
             if(response.data.success){
                 setProducts(response.data.products);
             }
@@ -158,7 +158,7 @@ const ShopContextProvider = (props)=>{
     },[])
 
     useEffect(() => {
-  console.log("BACKEND URL 👉", backendUrl);
+  //console.log("BACKEND URL 👉", backendUrl);
 }, []);
 
 
