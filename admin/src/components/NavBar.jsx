@@ -5,7 +5,7 @@ const NavBar = ({setToken}) => {
   return (
     <div className='flex items-center justify-between py-2 px-[4%]'>
       <div className=''>  
-        <img src={assets.logo} alt="" className='w-[max(10%,80px)]'/>
+        <img src={assets.Logo} alt="" className='w-[max(10%,80px)]'/>
         <p className='text-gray-700 translate-y-[-12px]'>Admin Panel</p>
       </div>
         <button onClick={()=>setToken('')} className='bg-black text-white px-5 py-2
