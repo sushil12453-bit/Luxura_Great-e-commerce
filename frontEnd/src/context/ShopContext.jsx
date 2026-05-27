@@ -158,7 +158,9 @@ const ShopContextProvider = (props)=>{
     },[])
 
     useEffect(() => {
-  //console.log("BACKEND URL 👉", backendUrl);
+        console.log("Backend URL:", import.meta.env.VITE_APP_BACKEND_URL);
+
+ // console.log("BACKEND URL 👉", backendUrl);
 }, []);
 
 
